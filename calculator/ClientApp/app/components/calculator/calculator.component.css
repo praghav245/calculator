@@ -1,0 +1,60 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.thinborder {
+    border:1px solid #ccc;
+    width:170px;
+    height:80px;
+    background:black;
+}
+.calcbuttons {
+    padding:10px;
+}
+.numberbutton {
+    width:35px;
+}
+.operationbutton {
+    width:35px;
+}
+.clearbutton {
+    width:35px;
+    background-color:green;
+    color:white;
+}
+.output {
+    background:black;
+    color:lime;
+    font-family:"Courier New", Courier;
+    padding:0 10px;
+    text-align:right;
+    font-size:14px;
+}
+.calcbody {
+    background-color:darkslateblue;
+    width:200px;
+    padding:10px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius:12px;
+}

@@ -1,0 +1,38 @@
+<h3>Calculator App</h3>
+<div class="container">
+    <div class="calcbody">
+        <div class="thinborder">
+            <p class="output" name="output">
+                {{previousValue}}
+                <br>
+                {{operatorValue}}
+                <br>
+                {{currentValue}}
+
+            </p>
+        </div>
+        <div class="calcbuttons">
+            <button name="btn1" class="numberbutton" (click)='numberClick(1)'>1</button>
+            <button name="btn2" class="numberbutton" (click)='numberClick(2)'>2</button>
+            <button name="btn3" class="numberbutton" (click)='numberClick(3)'>3</button>
+            <button name="btnMinus" class="operationbutton" (click)='subtract()'>-</button>
+            <br>
+            <button name="btn4" class="numberbutton" (click)='numberClick(4)'>4</button>
+            <button name="btn5" class="numberbutton" (click)='numberClick(5)'>5</button>
+            <button name="btn6" class="numberbutton" (click)='numberClick(6)'>6</button>
+            <button name="btnPlus" class="operationbutton" (click)='add()'>+</button>
+            <br>
+            <button name="btn7" class="numberbutton" (click)='numberClick(7)'>7</button>
+            <button name="btn8" class="numberbutton" (click)='numberClick(8)'>8</button>
+            <button name="btn9" class="numberbutton" (click)='numberClick(9)'>9</button>
+            <button name="btnMultiply" class="operationbutton" (click)='multiply()'>*</button>
+            <br>
+            <button name="btn0" class="numberbutton" value="0" (click)='numberClick(0)'>0</button>
+            <button name="btnClear" class="clearbutton" (click)='clear()'>C</button>
+            <button name="btnEquals" class="operationbutton" (click)='calculate()'>=</button>
+            <button name="btnDivide" class="operationbutton" (click)='divide()'>/</button>
+        </div>
+    </div>
+
+    <button class="btn btn-default" ng-click='Save()'>Save</button>
+</div>
